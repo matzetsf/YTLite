@@ -1,0 +1,10 @@
+product-id: 950
+comment: "Testbuch"
+welcome: hallo
+language: de
+scripts:
+  tier:
+  - P(hund)
+speak:
+  hallo: "Hallo, willkommen!"
+  hund: "Wau wau, ich bin ein Hund."

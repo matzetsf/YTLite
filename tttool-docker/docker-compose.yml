@@ -1,0 +1,10 @@
+services:
+  tttool:
+    build: .
+    image: tttool:1.11
+    platform: linux/amd64
+    # Dateien gehören danach dir statt root (UID/GID ggf. anpassen)
+    user: "${UID:-1000}:${GID:-1000}"
+    working_dir: /work
+    volumes:
+      - ./work:/work
